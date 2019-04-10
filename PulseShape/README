@@ -1,0 +1,11 @@
+
+#Use data from Raffaele Gerrosa stoed on eos
+#compilation:
+g++ `root-config --cflags --glibs` -c TkPulseShape.o
+g++ `root-config --cflags --glibs` TkPulseShape.o  MyMacroConv.c -o TkPulseShape
+#launch the program on all modes through a script
+./launch
+#Compilation
+g++ `root-config --cflags --glibs` Comparison.c -o Comparison
+#comparative plots
+./Comparison
